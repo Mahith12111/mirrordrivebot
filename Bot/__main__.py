@@ -34,36 +34,38 @@ def stats(update, context):
     cpuUsage = psutil.cpu_percent(interval=0.5)
     memory = psutil.virtual_memory().percent
     disk = psutil.disk_usage('/').percent
-    stats = f'<b>⌈➳ 💝 𝙾𝙽𝙻𝙸𝙽𝙴 𝚃𝙸𝙼𝙴 ⌚ : </b> <code>{currentTime}</code>\n' \
-            f'<b>⌈➳ 📇 𝙳𝙸𝚂𝙺 𝚂𝙿𝙰𝙲𝙴 ☠️ : </b> <code>{total}</code>\n' \
-            f'<b>⌈➳ 🗃 𝙳𝙸𝚂𝙺 𝚂𝙿𝙰𝙲𝙴 𝚄𝚂𝙴𝙳 📄 : </b> <code>{used}</code>\n' \
-            f'<b>⌈➳ 💌 𝙳𝙸𝚂𝙺 𝚂𝙿𝙰𝙲𝙴 𝙵𝚁𝙴𝙴  : </b> <code>{free}</code>\n\n' \
-            f'<b>⌈➳ 𝚄𝙿𝙻𝙾𝙰𝙳 𝙳𝙰𝚃𝙰 💞 ... ⇆⏫ :</b> <code>{sent}</code>\n' \
-            f'<b>⌈➳ 💃 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙳𝙰𝚃𝙰 💔 ... ⇆⏬ :</b> <code>{recv}</code>\n\n' \
-            f'<b>⌈➳ 🖥 𝙲𝙿𝚄 𝚄𝚂𝙰𝙶𝙴↹  : </b> <code>{cpuUsage}% Ϟ</code>\n' \
-            f'<b>⌈➳ 👰 𝚄𝚂𝙰𝙶𝙴 𝙾𝙵 𝙼𝙴𝙼𝙾𝚁𝚈  : </b> <code>{memory}%</code>\n' \
-            f'<b>⌈➳ 👸 𝙳𝙸𝚂𝙺 𝚄𝚂𝙴𝙳 : </b> <code>{disk}% </code>\n' \
-            f'<b>⌈➳ 🧰 𝙾𝚂 𝚂𝙿𝙰𝙲𝙴 : </b> <code>⇉7.2% ♲</code>\n' \
-            f'<b>⌈➳ 📡 𝚂𝙴𝚁𝚅𝙴𝚁 : </b>Global ≼<code> </code><b>🌬 : </b><code>28%</code>\n<b>⌈➳ 💽 𝙳𝙸𝚂𝙺 𝙷𝙾𝚂𝚃 ⊫ : </b><code>SSD⋖</code>\n\n' \
-            f'<b>⌈➳ 🧭 𝚃𝙸𝙼𝙴 𝚉𝙾𝙽𝙴 : </b><code>Asia/Kolkata</code>\n<b>⌈➳ 🇮🇳 𝚃𝙸𝙼𝙴 𝚂𝚃𝙰𝚃𝙴 : </b><code>INDIA-(GMT+:05:30)</code>\n<b>⌈➳ ☁ 𝙳𝚁𝙸𝚅𝙴 𝚂𝙿𝙰𝙲𝙴 => </b><code>495-TB𖥫</code>\n<b>⌈➳ 🛠 𝚃𝚂𝚁 : </b><code>2.53 GB</code><b> 🎄 : </b><code>76.48% ≛</code>\n<b>⌈➳ ✳ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : </b><code>3.9.7∝</code>\n<b>⌈➳ 🍥 ɪᴘ ᴀᴅᴅʀᴇss 𖣃 </b><code>Encrypted</code>\n\n<b>⌈➳ π- Bot Update Info..! </b>'"<a href='https://telegra.ph/file/b02788a8c2c7ca546d369.jpg'>😎</a>"
+    stats = f'<b>⌈➳  𝙾𝙽𝙻𝙸𝙽𝙴 𝚃𝙸𝙼𝙴  : </b> <code>{currentTime}</code>\n' \
+            f'<b>⌈➳  𝙳𝙸𝚂𝙺 𝚂𝙿𝙰𝙲𝙴  : </b> <code>{total}</code>\n' \
+            f'<b>⌈➳  𝙳𝙸𝚂𝙺 𝚂𝙿𝙰𝙲𝙴 𝚄𝚂𝙴𝙳  : </b> <code>{used}</code>\n' \
+            f'<b>⌈➳  𝙳𝙸𝚂𝙺 𝚂𝙿𝙰𝙲𝙴 𝙵𝚁𝙴𝙴  : </b> <code>{free}</code>\n\n' \
+            f'<b>⌈➳  𝚄𝙿𝙻𝙾𝙰𝙳 𝙳𝙰𝚃𝙰  ... ⇆⏫ :</b> <code>{sent}</code>\n' \
+            f'<b>⌈➳  𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙳𝙰𝚃𝙰  ... ⇆⏬ :</b> <code>{recv}</code>\n\n' \
+            f'<b>⌈➳  𝙲𝙿𝚄 𝚄𝚂𝙰𝙶𝙴↹  : </b> <code>{cpuUsage}% Ϟ</code>\n' \
+            f'<b>⌈➳  𝚄𝚂𝙰𝙶𝙴 𝙾𝙵 𝙼𝙴𝙼𝙾𝚁𝚈  : </b> <code>{memory}%</code>\n' \
+            f'<b>⌈➳  𝙳𝙸𝚂𝙺 𝚄𝚂𝙴𝙳 : </b> <code>{disk}% </code>\n' \
+            f'<b>⌈➳  𝙾𝚂 𝚂𝙿𝙰𝙲𝙴 : </b> <code>⇉7.2% ♲</code>\n' \
+            f'<b>⌈➳  𝚂𝙴𝚁𝚅𝙴𝚁 : </b>Global ≼<code> </code><b>🌬 : </b><code>28%</code>\n<b>⌈➳ 💽 𝙳𝙸𝚂𝙺 𝙷𝙾𝚂𝚃 ⊫ : </b><code>SSD⋖</code>\n\n' \
+            f'<b>⌈➳  𝚃𝙸𝙼𝙴 𝚉𝙾𝙽𝙴 : </b><code>Asia/Kolkata</code>\n<b>⌈➳ 🇮🇳 𝚃𝙸𝙼𝙴 𝚂𝚃𝙰𝚃𝙴 : </b><code>INDIA-(GMT+:05:30)</code>\n<b>⌈➳ ☁ 𝙳𝚁𝙸𝚅𝙴 𝚂𝙿𝙰𝙲𝙴 => </b><code>495-TB𖥫</code>\n<b>⌈➳ 🛠 𝚃𝚂𝚁 : </b><code>2.53 GB</code><b> 🎄 : </b><code>76.48% ≛</code>\n<b>⌈➳ ✳ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : </b><code>3.9.7∝</code>\n<b>⌈➳ 🍥 ɪᴘ ᴀᴅᴅʀᴇss 𖣃 </b><code>Encrypted</code>\n\n<b>⌈➳ π- Bot Update Info..! </b>'"<a href='https://telegra.ph/file/b02788a8c2c7ca546d369.jpg'>😎</a>"
             
             
     sendMessage(stats, context.bot, update)
 
 def start(update, context):
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("🔥 Repo", "https://t.me/PremiumRelease")
-    buttons.buildbutton("😎 Channel", "https://t.me/MirrorDrive")
-    reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
+    buttons.buildbutton("Updates Channel", "https://t.me/ASIMIRRORUPDATESs")
+    buttons.buildbutton("My Master", "https://t.me/Mahith1211")
+    buttons.buildbutton("Join Mirror Group", "https://t.me/+Nb5ySTi5hBUwYzE1")
+    reply_markup = InlineKeyboardMarkup(buttons.build_menu(3))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
-☠️ https://t.me/MirrorDrive
+☠️ https://t.me/ASIMIRRORUPDATESs
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
         sendMarkup(
-            'Help.\n Join https://t.me/MirrorDrive <b>PremiumRelease</b>.',
+            'This bot can mirror all your links to Google Drive!
+Type /help to get a list of available commands <b>Join Channel for more Information.</b>.',
             context.bot,
             update,
             reply_markup,
@@ -71,7 +73,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 
 
 def restart(update, context):
-    restart_message = sendMessage("Restarting, Please wait!..👻👻", context.bot, update)
+    restart_message = sendMessage("Restarting, Please wait!..", context.bot, update)
     # Save restart message object in order to reply to it after restarting
     with open(".restartmsg", "w") as f:
         f.truncate(0)
@@ -84,7 +86,7 @@ def restart(update, context):
 
 def ping(update, context):
     start_time = int(round(time.time() * 1000))
-    reply = sendMessage("Starting_Ping ☠️", context.bot, update)
+    reply = sendMessage("Starting_Ping 😁", context.bot, update)
     end_time = int(round(time.time() * 1000))
     editMessage(f'{end_time - start_time} 𝙿𝙸𝙽𝙶 𝚄𝙿𝙳𝙰𝚃𝙴 𝙸𝚗𝚏𝚘 => 𝙼𝚂 🔥', reply)
 
@@ -161,9 +163,9 @@ help_string_telegraph = f'''<br>
 <b>/{BotCommands.StatsCommand}</b>: Show Stats of the machine the bot is hosted on
 '''
 help = Telegraph(access_token=telegraph_token).create_page(
-        title='Join 👉 MirrorDrive 🔥',
-        author_name='Mirrordrive',
-        author_url='https://t.me/MirrorDrive',
+        title='Join 👉 ASI MIRROR UPDATES 🔥',
+        author_name='ASIMIRRORUPDATESS',
+        author_url='https://t.me/ASIMIRRORUPDATESS',
         html_content=help_string_telegraph,
     )["path"]
 
