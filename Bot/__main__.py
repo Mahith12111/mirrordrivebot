@@ -34,11 +34,11 @@ def stats(update, context):
     cpuUsage = psutil.cpu_percent(interval=0.5)
     memory = psutil.virtual_memory().percent
     disk = psutil.disk_usage('/').percent
-    stats = f'<b>⌈➳  𝙾𝙽𝙻𝙸𝙽𝙴 𝚃𝙸𝙼𝙴  : </b> <code>{currentTime}</code>\n' \
-            f'<b>⌈➳  𝙳𝙸𝚂𝙺 𝚂𝙿𝙰𝙲𝙴  : </b> <code>{total}</code>\n' \
-            f'<b>⌈➳  𝙳𝙸𝚂𝙺 𝚂𝙿𝙰𝙲𝙴 𝚄𝚂𝙴𝙳  : </b> <code>{used}</code>\n' \
-            f'<b>⌈➳  𝙳𝙸𝚂𝙺 𝚂𝙿𝙰𝙲𝙴 𝙵𝚁𝙴𝙴  : </b> <code>{free}</code>\n\n' \
-            f'<b>⌈➳  𝚄𝙿𝙻𝙾𝙰𝙳 𝙳𝙰𝚃𝙰  ... ⇆⏫ :</b> <code>{sent}</code>\n' \
+    stats = f'<b>⌈➳  😎𝙾𝙽𝙻𝙸𝙽𝙴 𝚃𝙸𝙼𝙴😎  : </b> <code>{currentTime}</code>\n' \
+            f'<b>⌈➳  💾𝙳𝙸𝚂𝙺 𝚂𝙿𝙰𝙲𝙴💾  : </b> <code>{total}</code>\n' \
+            f'<b>⌈➳  💿𝙳𝙸𝚂𝙺 𝚂𝙿𝙰𝙲𝙴 𝚄𝚂𝙴𝙳💿  : </b> <code>{used}</code>\n' \
+            f'<b>⌈➳  🤞𝙳𝙸𝚂𝙺 𝚂𝙿𝙰𝙲𝙴 𝙵𝚁𝙴𝙴✌  : </b> <code>{free}</code>\n\n' \
+            f'<b>⌈➳  😉𝚄𝙿𝙻𝙾𝙰𝙳 𝙳𝙰𝚃𝙰😉  ... ⇆⏫ :</b> <code>{sent}</code>\n' \
             f'<b>⌈➳  𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙳𝙰𝚃𝙰  ... ⇆⏬ :</b> <code>{recv}</code>\n\n' \
             f'<b>⌈➳  𝙲𝙿𝚄 𝚄𝚂𝙰𝙶𝙴↹  : </b> <code>{cpuUsage}% Ϟ</code>\n' \
             f'<b>⌈➳  𝚄𝚂𝙰𝙶𝙴 𝙾𝙵 𝙼𝙴𝙼𝙾𝚁𝚈  : </b> <code>{memory}%</code>\n' \
@@ -64,8 +64,8 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
         sendMarkup(
-            'This bot can mirror all your links to Google Drive!
-Type /help to get a list of available commands <b>Join Channel for more Information.</b>.',
+            'This bot can mirror all your links to Google Drive!'
+Type /help to get a list of available commands' <b>Join Channel for more Information.</b>.',
             context.bot,
             update,
             reply_markup,
