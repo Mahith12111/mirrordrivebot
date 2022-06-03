@@ -45,7 +45,7 @@ def stats(update, context):
             f'<b>⌈➳  𝙳𝙸𝚂𝙺 𝚄𝚂𝙴𝙳 : </b> <code>{disk}% </code>\n' \
             f'<b>⌈➳  𝙾𝚂 𝚂𝙿𝙰𝙲𝙴 : </b> <code>⇉7.2% ♲</code>\n' \
             f'<b>⌈➳  𝚂𝙴𝚁𝚅𝙴𝚁 : </b>Global ≼<code> </code><b>🌬 : </b><code>28%</code>\n<b>⌈➳ 💽 𝙳𝙸𝚂𝙺 𝙷𝙾𝚂𝚃 ⊫ : </b><code>SSD⋖</code>\n\n' \
-            f'<b>⌈➳  𝚃𝙸𝙼𝙴 𝚉𝙾𝙽𝙴 : </b><code>Asia/Kolkata</code>\n<b>⌈➳ 🇮🇳 𝚃𝙸𝙼𝙴 𝚂𝚃𝙰𝚃𝙴 : </b><code>INDIA-(GMT+:05:30)</code>\n<b>⌈➳ ☁ 𝙳𝚁𝙸𝚅𝙴 𝚂𝙿𝙰𝙲𝙴 => </b><code>495-TB𖥫</code>\n<b>⌈➳ 🛠 𝚃𝚂𝚁 : </b><code>2.53 GB</code><b> 🎄 : </b><code>76.48% ≛</code>\n<b>⌈➳ ✳ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : </b><code>3.9.7∝</code>\n<b>⌈➳ 🍥 ɪᴘ ᴀᴅᴅʀᴇss 𖣃 </b><code>Encrypted</code>\n\n<b>⌈➳ π- Bot Update Info..! </b>'"<a href='https://telegra.ph/file/b02788a8c2c7ca546d369.jpg'>😎</a>"
+            f'<b>⌈➳  𝚃𝙸𝙼𝙴 𝚉𝙾𝙽𝙴 : </b><code>Asia/Kolkata</code>\n<b>⌈➳ 🇮🇳 𝚃𝙸𝙼𝙴 𝚂𝚃𝙰𝚃𝙴 : </b><code>INDIA-(GMT+:05:30)</code>\n<b>⌈➳ ☁ 𝙳𝚁𝙸𝚅𝙴 𝚂𝙿𝙰𝙲𝙴 => </b><code>495-TB𖥫</code>\n<b>⌈➳ 🛠 𝚃𝚂𝚁 : </b><code>2.53 GB</code><b> 🎄 : </b><code>76.48% ≛</code>\n<b>⌈➳ ✳ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : </b><code>3.9.7∝</code>\n<b>⌈➳ 🍥 ɪᴘ ᴀᴅᴅʀᴇss 𖣃 </b><code>Encrypted</code>\n\n<b>⌈➳ π- Bot Update Info..! </b>'"<a href='https://te.legra.ph/file/b2682b5acc7d76a2f2ce6.jpg'>😎</a>"
             
             
     sendMessage(stats, context.bot, update)
