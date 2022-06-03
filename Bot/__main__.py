@@ -64,8 +64,8 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
         sendMarkup(
-            'This bot can mirror all your links to Google Drive!'
-Type /help to get a list of available commands' <b>Join Channel for more Information.</b>.',
+            'This bot can mirror all your links to Google Drive'
+Type /help to get a list of available commands <b>Join Channel for more Information.</b>.',
             context.bot,
             update,
             reply_markup,
